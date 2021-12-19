@@ -36,3 +36,5 @@
 ![image](https://user-images.githubusercontent.com/70855182/146687737-08761a88-bb09-466f-9f40-58bb4c9c70ab.png)
 
 3.Модифицируйте код вашего сервиса таким образом, чтобы он поддерживал защищенное соединение.
+
+![image](https://user-images.githubusercontent.com/70855182/146688399-0ba06762-f5ff-4020-be7b-1843a0fac841.png)
