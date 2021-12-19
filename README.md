@@ -25,10 +25,14 @@
 
 ![image](https://user-images.githubusercontent.com/70855182/146684645-b544e64f-cff4-4da0-8d90-77d1b61dd2c9.png)
 
-пароль хранится в хэшированном в виде
+пароль хранится в хэшированном виде
 
 ![image](https://user-images.githubusercontent.com/70855182/146685698-6e29fcdc-7edc-4b72-a6d2-9214f0a7c00f.png)
 
 2.Настройте веб-сервер по Вашему выбору (Apache2 или nginx) таким образом, чтобы он поддерживал соединение по протоколу HTTPS. Для этого сгенирируйте самоподписанный сертификат SSL.
+
+![image](https://user-images.githubusercontent.com/70855182/146687731-30043083-765a-46c3-b13b-3ce09fe06a7e.png)
+
+![image](https://user-images.githubusercontent.com/70855182/146687737-08761a88-bb09-466f-9f40-58bb4c9c70ab.png)
 
 3.Модифицируйте код вашего сервиса таким образом, чтобы он поддерживал защищенное соединение.
