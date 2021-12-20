@@ -21,9 +21,9 @@ def js_load(users):
 def hasher(password, salt=None):
 	if salt == None:
 		salt = sha256(os.urandom(70)).hexdigest().encode('ascii')
-		pwdhash = hashlib.pbkdf2_hmac('sha512', password.encode('utf-8'), salt, 80000)
-		pwdhash = binascii.hexlify(pwdhash)
-		return (salt + pwdhash).decode('ascii'), salt.decode('ascii')
+		key = hashlib.pbkdf2_hmac('sha512', password.encode('utf-8'), salt, 80000)
+		key = binascii.hexlify(key)
+		return (salt + key).decode('ascii'), salt.decode('ascii')
 	else:
 		salt = salt.encode('ascii')
 		new_key = hashlib.pbkdf2_hmac('sha512', password.encode('utf-8'), salt, 80000)
@@ -109,5 +109,5 @@ def user_data():
     return 'User data storage system'
 
 if __name__ == '__main__':
-    # app.run(debug=True, ssl_context='adhoc')
+    # app.run(debug=True, ssl_context='')
     app.run(host='0.0.0.0', debug=False)
